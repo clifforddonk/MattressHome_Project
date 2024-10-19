@@ -3,6 +3,7 @@ import Carousel from "./Components/Carousel";
 import Footer from "./Components/Footer";
 import QuickLinks from "./Components/QuickLinks";
 import BrandsCard from "./Components/BrandsCard";
+import Card from "./Components/Card";
 
 const App = () => {
   return (
@@ -13,7 +14,11 @@ const App = () => {
         <div className="py-5">
           <BrandsCard />
         </div>
+        <div>
+          <Card />
+        </div>
       </main>
+
       <div className="bg-[#F40000] text-white flex flex-col md:flex-row py-10 justify-evenly gap-10">
         <QuickLinks />
       </div>
