@@ -19,9 +19,8 @@ const App = () => {
         </div>
       </main>
 
-      <div className="bg-[#F40000] text-white flex flex-col md:flex-row py-10 justify-evenly gap-10">
-        <QuickLinks />
-      </div>
+      <QuickLinks />
+
       <footer>
         <Footer />
       </footer>
