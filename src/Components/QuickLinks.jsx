@@ -6,7 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 const QuickLinks = () => {
   return (
     <>
-      <div className="bg-[#F40000] text-white flex flex-col md:flex-row py-10 justify-evenly gap-10">
+      <div className="bg-[#f40000]  text-white flex flex-col md:flex-row py-10 justify-evenly gap-10">
         <div className="w-full px-10 md:w-1/3">
           <h1 className="mb-6 font-bold text-xl">QuickLinks</h1>
           <hr className="mb-2" />
@@ -26,7 +26,7 @@ const QuickLinks = () => {
           </ul>
         </div>
         <div className="px-10 w-full md:w-1/3">
-          <h1 className="text-xl font-bold mb-6">Follow Mattress Home</h1>
+          <h1 className="text-xl font-bold mb-6">Follow The Sleep Santuary</h1>
           <hr className="mb-2" />
           <div
             className="flex justify-evenly mt-3 lg:pl-4  lg:pr-20 px-2
@@ -42,9 +42,9 @@ const QuickLinks = () => {
           <h1 className="mb-6 text-xl font-bold ">About Us </h1>
           <hr className="mb-2" />
           <p>
-            Mattress Home is dedicated to providing quality and affordable
+            The Sleep Santuary is dedicated to providing quality and affordable
             mattresses for your best rest. Our mission is to ensure that
-            everyone can enjoy a good night's sleep with our wide range of
+            everyone can enjoy a good night&apos;s sleep with our wide range of
             products
           </p>
         </div>

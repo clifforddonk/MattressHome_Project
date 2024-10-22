@@ -18,8 +18,9 @@ const App = () => {
           <Card />
         </div>
       </main>
-
-      <QuickLinks />
+      <div>
+        <QuickLinks />
+      </div>
 
       <footer>
         <Footer />

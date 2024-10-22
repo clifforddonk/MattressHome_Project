@@ -12,11 +12,14 @@ const Services = () => {
         <div className="flex md:flex-row flex-col gap-10 justify-between w-full p-6 md:p-0">
           <div className="w-full">
             <h2 className="text-xl font-bold text-yellow-400">Sleep Better</h2>
-            <h1 className="text-3xl font-bold ">Our Services|Mattress Home</h1>
+            <h1 className="text-3xl font-bold ">
+              Our Services | The Sleep Santuary
+            </h1>
             <p className="text-xl py-5 text-gray-800">
-              At Mattress Home, we are dedicated to providing top-notch services
-              that cater to your sleep needs. Whether you need a new mattress or
-              wish to restore your old one, we have the perfect solution for you
+              At The Sleep Santuary, we are dedicated to providing top-notch
+              services that cater to your sleep needs. Whether you need a new
+              mattress or wish to restore your old one, we have the perfect
+              solution for you
             </p>
             <div className="flex gap-3 justify-evenly mt-4">
               <FaLayerGroup className="text-yellow-300 text-4xl" />
