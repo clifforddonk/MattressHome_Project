@@ -2,7 +2,7 @@ const BrandsCard = () => {
   return (
     <div>
       <div className="flex flex-col lg:flex-row gap-10">
-        <div className="w-full overflow-hidden rounded-md bg-white flex flex-col md:flex-row">
+        <div className="w-full overflow-hidden rounded-md bg-white flex flex-col md:flex-row ">
           <img
             src="images/royalfoam.jpg"
             className="h-48 w-full md:w-1/2 object-cover"
@@ -17,7 +17,7 @@ const BrandsCard = () => {
           </div>
         </div>
 
-        <div className="w-full overflow-hidden rounded-md bg-white flex flex-col md:flex-row">
+        <div className="w-full overflow-hidden rounded-md bg-white flex flex-col md:flex-row ">
           <img
             src="images/latexfoam.jpg"
             className="h-48 w-full md:w-1/2 object-cover"
@@ -33,7 +33,7 @@ const BrandsCard = () => {
         </div>
       </div>
       <div className="flex flex-col lg:flex-row gap-10 py-8">
-        <div className="w-full overflow-hidden rounded-md bg-white flex flex-col md:flex-row">
+        <div className="w-full overflow-hidden rounded-md bg-white flex flex-col md:flex-row ">
           <img
             src="images/ashfoam.jpg"
             className="h-48 w-full md:w-1/2 object-cover"
@@ -48,7 +48,7 @@ const BrandsCard = () => {
           </div>
         </div>
 
-        <div className="w-full overflow-hidden rounded-md bg-white flex flex-col md:flex-row">
+        <div className="w-full overflow-hidden rounded-md bg-white flex flex-col md:flex-row ">
           <img
             src="images/sleepscience.jpg"
             className="h-48 w-full md:w-1/2 object-cover"
