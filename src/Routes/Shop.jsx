@@ -8,11 +8,7 @@ const Shop = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   const handleCategoryClick = (categoryId) => {
-    if (selectedCategory === categoryId) {
-      setSelectedCategory(null);
-    } else {
-      setSelectedCategory(categoryId);
-    }
+    setSelectedCategory((prev) => (prev === categoryId ? null : categoryId));
   };
 
   return (
