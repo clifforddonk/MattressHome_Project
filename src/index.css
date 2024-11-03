@@ -1,11 +1,9 @@
-@import 'flowbite';
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import "flowbite";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @tailwind utilities;
 @tailwind base;
 @tailwind components;
 
-
-.link{
-  @apply font-semibold text-white text-lg px-3 mx-2 mb-1 p-1 hover:border-b hover:border-yellow-200 hover:rounded-b hover:text-yellow-200
+.link {
+  @apply font-bold text-white text-lg px-3 mx-2 mb-1 p-1 hover:border-b hover:border-yellow-200 hover:rounded-b hover:text-yellow-200;
 }
-
