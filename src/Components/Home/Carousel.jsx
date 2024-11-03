@@ -16,28 +16,28 @@ const Carousel = () => {
       <div className="relative h-40 sm:h-56  overflow-hidden rounded-md">
         <div className="duration-700 ease-in-out" data-carousel-item>
           <img
-            src="/images/slide1.jpg"
+            src="/carousel images/slide1.jpg"
             className="absolute block w-full h-full object-cover"
             alt="Slide 1"
           />
         </div>
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
           <img
-            src="/images/slide2.jpg"
+            src="/carousel images/slide2.jpg"
             className="absolute block w-full h-full object-cover"
             alt="Slide 2"
           />
         </div>
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
           <img
-            src="/images/slide3.jpg"
+            src="/carousel images/slide3.jpg"
             className="absolute block w-full h-full object-cover"
             alt="Slide 3"
           />
         </div>
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
           <img
-            src="/images/slide4.jpg"
+            src="/carousel images/slide4.jpg"
             className="absolute block w-full h-full object-cover"
             alt="Slide 4"
           />

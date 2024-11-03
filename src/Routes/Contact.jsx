@@ -7,9 +7,13 @@ const Contact = () => {
     <>
       <Navbar />
       <main className="mt-[200px] md:m-12 sm:m-0 md:mt-[200px]">
-        <div className="flex">
-          <div className="overflow-hidden rounded-xl relative">
-            <img src="images/image (1).avif" className=" w-full" alt="" />
+        <div className=" grid grid-cols-1 lg:grid-cols-2">
+          <div className="overflow-hidden rounded-xl relative h-full">
+            <img
+              src="brand images/image (1).avif"
+              className=" w-full h-[full]"
+              alt=""
+            />
             <h1 className="left-4 top-4 absolute text-white font-bold text-3xl">
               Contact Us
             </h1>
@@ -19,38 +23,70 @@ const Contact = () => {
               <div></div>
             </div>
           </div>
-          <div className="mx-0 w-full bg-white shadow rounded-xl">
+          <div className="mx-0 w-full shadow rounded-xl bg-white ">
             <form action="">
-              <p className="text-center text-yellow-400 text-3xl pt-4 mt-2">
+              <p className="text-center text-yellow-300 text-4xl font-bold pt-4 mt-2">
                 Send Us a Message
               </p>
-              <div className="flex flex-col">
+              <div className="flex flex-col mx-4 ">
                 <input
                   type="text"
                   placeholder="Name"
-                  className="border-b-gray-100 mt-3 rounded mx-6 full"
+                  className="border-gray-300  mt-6 mx-6 "
+                  style={{ borderRadius: "50px" }}
                 />
                 <input
+                  style={{ borderRadius: "50px" }}
                   type="email"
                   name=""
                   id=""
                   placeholder="Email"
-                  className="border-b-gray-100 mt-6 rounded mx-6 full"
+                  className="border-b-gray-100 mt-8  rounded mx-6 "
                 />
                 <input
+                  style={{ borderRadius: "50px" }}
                   type="number"
                   name=""
                   id=""
                   placeholder="Phone"
-                  className="border-b-gray-100 mt-6 rounded mx-6 full"
+                  className=" border-b-gray-100 mt-8 mx-6"
                 />
               </div>
-              <p>Preferred method of communication</p>
-              div
-              <input type="checkbox" name="" id="" />
-              <input type="checkbox" name="" id="" />
-              <textarea name="" id="" placeholder="Message..."></textarea>
-              <button>Send</button>
+              <p className="px-10 text-gray-600 text-lg mt-4">
+                Preferred method of communication
+              </p>
+              <div className="flex gap-5 px-10">
+                <div className="">
+                  <input type="radio" name="phone" id="" className="" />
+                  <label
+                    className="px-1 text-gray-600 font-semibold"
+                    htmlFor=""
+                  >
+                    Email
+                  </label>
+                </div>
+                <div>
+                  <input type="radio" name="phone" id="" />
+                  <label
+                    className="px-1 text-gray-600 font-semibold"
+                    htmlFor=""
+                  >
+                    Phone
+                  </label>
+                </div>
+              </div>
+              <div className="mx-6">
+                <textarea
+                  style={{ borderRadius: "12px" }}
+                  className="px-2 w-full mt-3 min-h-32"
+                  name=""
+                  id=""
+                  placeholder="Message..."
+                ></textarea>
+                <button className=" w-full mb-2 bg-yellow-300 text-white p-2 font-semibold text-xl mt-3 rounded-full hover:bg-yellow-400 duration-500">
+                  Send
+                </button>
+              </div>
             </form>
           </div>
         </div>

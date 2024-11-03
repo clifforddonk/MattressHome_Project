@@ -4,7 +4,7 @@ const BrandsCard = () => {
       <div className="flex flex-col lg:flex-row gap-10">
         <div className="w-full overflow-hidden rounded-md bg-white flex flex-col md:flex-row ">
           <img
-            src="images/royalfoam.jpg"
+            src=" brand images/royalfoam.jpg"
             className="h-48 w-full md:w-1/2 object-cover"
             alt="Royal Foam Mattress"
           />
@@ -19,7 +19,7 @@ const BrandsCard = () => {
 
         <div className="w-full overflow-hidden rounded-md bg-white flex flex-col md:flex-row ">
           <img
-            src="images/latexfoam.jpg"
+            src="brand images/latexfoam.jpg"
             className="h-48 w-full md:w-1/2 object-cover"
             alt="latex foam"
           />
@@ -35,7 +35,7 @@ const BrandsCard = () => {
       <div className="flex flex-col lg:flex-row gap-10 py-8">
         <div className="w-full overflow-hidden rounded-md bg-white flex flex-col md:flex-row ">
           <img
-            src="images/ashfoam.jpg"
+            src="brand images/ashfoam.jpg"
             className="h-48 w-full md:w-1/2 object-cover"
             alt="Royal Foam Mattress"
           />
@@ -50,7 +50,7 @@ const BrandsCard = () => {
 
         <div className="w-full overflow-hidden rounded-md bg-white flex flex-col md:flex-row ">
           <img
-            src="images/sleepscience.jpg"
+            src="brand images/sleepscience.jpg"
             className="h-48 w-full md:w-1/2 object-cover"
             alt="latex foam"
           />

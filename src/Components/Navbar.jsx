@@ -28,7 +28,7 @@ function Navbar() {
           <div className="px-2 flex jusfify-evenly">
             <img
               className="w-15 h-9 "
-              src="images/mattress-logo.png"
+              src="/icons/mattress-logo.png"
               alt="Logo"
             />
 
@@ -36,19 +36,22 @@ function Navbar() {
               The Sleep Sanctuary.
             </h1>
           </div>
-
           {/* Search Input */}
-          <div className="relative w-80 order-1 sm:order-none mx-auto mb-5 sm:mb-0 pt-2 rounded-lg">
+          <div
+            className="relative w-80 order-1 sm:order-none mx-auto mb-5 sm:mb-0 pt-2"
+            style={{ borderRadius: "10px" }}
+          >
             <input
               type="text"
-              className="w-80 p-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full p-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Search..."
+              style={{ borderRadius: "10px" }}
             />
-            <IoSearch className="absolute right-3 top-1/2 transform -translate-y-1/2 text-xl text-gray-400" />
+            <IoSearch className="absolute right-4 top-1/2 transform -translate-y-1/2 text-xl text-gray-400" />
           </div>
 
           {/* Phone Icon */}
-          <div className="px-3 pr-6 md:px-28 md:mr-6">
+          <div className="px-3 pr-3 md:px-28 md:mr-6">
             <FiPhoneCall className="text-white text-2xl" />
           </div>
         </div>

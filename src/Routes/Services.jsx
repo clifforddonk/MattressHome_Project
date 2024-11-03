@@ -47,7 +47,7 @@ const Services = () => {
             </div>
           </div>
           <div className="overflow-hidden rounded-md w-full">
-            <img src="images/image.avif" className="" alt="" />
+            <img src="brand images/image.avif" className="" alt="" />
           </div>
         </div>
       </main>

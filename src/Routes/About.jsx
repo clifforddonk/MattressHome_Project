@@ -9,7 +9,7 @@ const About = () => {
         <div className="flex flex-col md:flex-row gap-10 p-6">
           <div>
             <img
-              src="images/image (1).avif"
+              src="brand images/image (1).avif"
               alt=""
               className="w-full rounded-md"
             />
