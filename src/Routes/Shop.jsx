@@ -80,13 +80,13 @@ const Shop = () => {
     <>
       <Navbar />
       <main className="mt-[170px] md:m-12 sm:m-0 md:mt-[150px]">
-        <h1 className="text-center text-2xl font-bold">Choose a filter:</h1>
-        <div className="justify-center grid grid-cols-2 md:grid-cols-4">
+        <h1 className="text-center text-3xl font-bold">Choose a filter:</h1>
+        <div className="justify-center grid grid-cols-2 md:grid-cols-4 gap-10 mt-2">
           {fetchCategory.map((category) => (
             <button
               onClick={() => handleCategoryClick(category.id)}
               key={category.id}
-              className={`font-bold font-xl border-2 border-yellow-300 mx-3 mt-2 py-1 px-4 rounded-xl ${
+              className={`font-bold font-xl border-2 border-yellow-300 mx-3 mt-2 py-1 rounded-xl ${
                 filterList.includes(category.id)
                   ? fetchCategoryColor(category.id)
                   : "bg-white text-black"
