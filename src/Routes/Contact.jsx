@@ -8,7 +8,7 @@ const Contact = () => {
       <Navbar />
       <main className="mt-[200px] md:m-12 sm:m-0 md:mt-[200px]">
         <div className=" grid grid-cols-1 lg:grid-cols-2">
-          <div className="overflow-hidden rounded-xl relative h-full">
+          <div className="overflow-hidden rounded-xl relative h-full mx-4 md:mx-0">
             <img
               src="brand images/image (1).avif"
               className=" w-full h-[full]"

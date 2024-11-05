@@ -51,7 +51,7 @@ function Navbar() {
           </div>
 
           {/* Phone Icon */}
-          <div className="px-3 pr-3 md:px-28 md:mr-6">
+          <div className=" pr-3 md:px-28 md:mr-6">
             <FiPhoneCall className="text-white text-2xl" />
           </div>
         </div>

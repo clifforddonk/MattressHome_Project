@@ -3,13 +3,41 @@ import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import QuickLinks from "../Components/QuickLinks";
 import axiosInstance from "../axios/axiosInstance";
+import { Link } from "react-router-dom";
 
 const ShopProduct = ({ product }) => {
   const imageUrl = `${import.meta.env.VITE_APP_API_URL}/${
     product.pictures[0].image_path
   }`;
+
+  const fetchBrand = (category) => {
+    switch (category) {
+      case 1:
+        return "Royal Foam";
+      case 2:
+        return "Latex Foam";
+      case 3:
+        return "AshFoam";
+      case 4:
+        return "Foreign Brands";
+    }
+  };
+
+  const fetchBrandColor = (category) => {
+    switch (category) {
+      case 1:
+        return "bg-[#7e00a9] text-white";
+      case 2:
+        return "bg-red-500 text-white font-bold";
+      case 3:
+        return "bg-[#f6d00c] text-black font-bold";
+      case 4:
+        return "bg-black text-gray-100 font-bold";
+    }
+  };
+
   return (
-    <div className="w-full h-90 bg-white shadow-md h-full rounded-lg overflow-hidden ">
+    <div className="w-full h-90 bg-white shadow-md h-full rounded-lg overflow-hidden  relative">
       <div className="h-48">
         <img src={imageUrl} className=" h-48 w-full" alt={product.name} />
       </div>
@@ -20,9 +48,18 @@ const ShopProduct = ({ product }) => {
         </h3>
       </div>
       <div className="mb-2">
-        <button className="border px-2 py-2 rounded-md bg-gray-600 text-sm text-white ml-2 ">
-          View products
-        </button>
+        <Link to={`/products/${product.id}`}>
+          <button className="border px-2 py-2 rounded-md bg-gray-600 text-sm text-white ml-2 ">
+            View products
+          </button>
+        </Link>
+      </div>
+      <div
+        className={`absolute py-1 px-4 rounded-bl-lg top-0 right-0 ${fetchBrandColor(
+          product.category_id
+        )}`}
+      >
+        {fetchBrand(product.category_id)}
       </div>
     </div>
   );
@@ -97,7 +134,7 @@ const Shop = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10  mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10  mt-10 mx-6">
           {filteredList.map((product) => (
             <ShopProduct key={product.id} product={product} />
           ))}

@@ -7,3 +7,7 @@
 .link {
   @apply font-bold text-white text-lg px-3 mx-2 mb-1 p-1 hover:border-b hover:border-yellow-200 hover:rounded-b hover:text-yellow-200;
 }
+
+.sizebutton {
+  @apply w-1/5 bg-yellow-400 rounded-full text-white p-1 font-bold;
+}
