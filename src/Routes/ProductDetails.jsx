@@ -12,30 +12,6 @@ const Details = ({ product }) => {
   const imageUrl = `${import.meta.env.VITE_APP_API_URL}/${
     product.pictures[0].image_path
   }`;
-  const fetchBrand = (category) => {
-    switch (category) {
-      case 1:
-        return "Royal Foam";
-      case 2:
-        return "Latex Foam";
-      case 3:
-        return "AshFoam";
-      case 4:
-        return "Foreign Brands";
-    }
-  };
-  const fetchBrandColor = (category) => {
-    switch (category) {
-      case 1:
-        return "bg-[#7e00a9] text-white";
-      case 2:
-        return "bg-red-500 text-white";
-      case 3:
-        return "bg-[#f6d00c] text-white";
-      case 4:
-        return "bg-black text-white";
-    }
-  };
 
   const fetchStars = (star) => {
     switch (star) {
@@ -138,7 +114,6 @@ const ProductDetails = () => {
       try {
         const response = await axiosInstance.get("/products");
         setData(response.data.products);
-        console.log(response.data.products);
       } catch (error) {
         setError(error);
       }
