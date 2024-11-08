@@ -77,12 +77,7 @@ const Shop = () => {
     };
     fetchShopProducts();
   }, []);
-  const fetchCategory = [
-    { id: 1, name: "Royal Foam" },
-    { id: 2, name: "Latex Foam" },
-    { id: 3, name: "AshFoam" },
-    { id: 4, name: "Foreign Brands" },
-  ];
+
   const fetchCategoryColor = (category) => {
     switch (category) {
       case 1:

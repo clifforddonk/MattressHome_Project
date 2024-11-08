@@ -28,6 +28,7 @@ const Products = () => {
       try {
         const response = await axiosInstance.get("/products/limit/8");
         setData(response.data.products);
+        console.log(response.data.products);
       } catch (error) {
         setError(error);
       }

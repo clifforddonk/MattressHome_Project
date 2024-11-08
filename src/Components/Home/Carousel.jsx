@@ -1,12 +1,6 @@
-import { useEffect } from "react";
 import "flowbite";
 
 const Carousel = () => {
-  useEffect(() => {
-    // Initialize Flowbite components
-    import("flowbite").then((flowbite) => flowbite.init());
-  }, []);
-
   return (
     <div
       id="default-carousel"
