@@ -11,6 +11,9 @@ import { FaStar } from "react-icons/fa";
 const DetailedImages = ({ product }) => {
   const [error, setError] = useState(null);
   const [imageUrls, setImageUrls] = useState([]);
+  const [imageUrl, setimageUrl] = useState(
+    `${import.meta.env.VITE_APP_API_URL}/${product.pictures[0].image_path}`
+  );
 
   useEffect(() => {
     const fetchImages = async () => {
@@ -29,24 +32,29 @@ const DetailedImages = ({ product }) => {
   }, [product.id]);
 
   return (
-    <div className="flex justify-center">
-      {error && <p>Error loading images: {error.message}</p>}
-      {imageUrls.map((url, index) => (
-        <img
-          key={index}
-          className="h-20 w-20 mb-2 shadow-xl p-2 shadow-gray-100 rounded-lg"
-          src={`${import.meta.env.VITE_APP_API_URL}/${url}`}
-          alt={product.name}
-        />
-      ))}
-    </div>
+    <>
+      <div className="full h-300 overflow-hidden flex flex-col-1  p-4">
+        <img src={imageUrl} alt={product.name} className="p-6" />
+      </div>
+      <div className="flex justify-center mt-4 overflow-hidden flex-wrap">
+        {error && <p>Error loading images: {error.message}</p>}
+        {imageUrls.map((url, index) => (
+          <img
+            key={index}
+            className="h-20 w-20 mb-2 shadow-xl p-2 shadow-gray-100 rounded-lg cursor-pointer"
+            src={`${import.meta.env.VITE_APP_API_URL}/${url}`}
+            alt={product.name}
+            onClick={() => {
+              setimageUrl(`${import.meta.env.VITE_APP_API_URL}/${url}`);
+            }}
+          />
+        ))}
+      </div>
+    </>
   );
 };
-const Details = ({ product }) => {
-  const imageUrl = `${import.meta.env.VITE_APP_API_URL}/${
-    product.pictures[0].image_path
-  }`;
 
+const Details = ({ product }) => {
   const fetchStars = (star) => {
     switch (star) {
       case 1:
@@ -94,16 +102,13 @@ const Details = ({ product }) => {
   };
 
   return (
-    <div className="bg-blue-200  p-8 md:p-14 rounded-xl pt-22 ">
+    <div className="bg-blue-200  p-8 md:p-14 rounded-xl pt-22  ">
       <div className=" gap-5 w-400 h-300 bg-white grid grid-cols-1 md:grid-cols-2 shadow-xl shadow-gray-400 rounded-xl">
-        <div className="full h-300 overflow-hidden  p-4">
-          <img src={imageUrl} alt={product.name} className="p-6" />
-          <div className="mt-4 overflow-hidden flex-wrap">
-            <DetailedImages product={product} />
-          </div>
+        <div className="">
+          <DetailedImages product={product} />
         </div>
 
-        <div className="w-full h-300 p-4 md:p-10 overflow-y-auto">
+        <div className="w-full h-300 p-4 md:p-10 overflow-x-auto">
           <h1 className="font-bold text-3xl">{product.name}</h1>
           <div className=" flex justify-between">
             <h2 className="font-bold text-2xl mt-4">
