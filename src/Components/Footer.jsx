@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { FaGithub } from "react-icons/fa";
+
 const Footer = () => {
   return (
     <div className="bg-gray-700 text-center border-white border-2 border-x-0 font-bold py-5 text-white">
@@ -9,6 +11,9 @@ const Footer = () => {
         className="text-blue-500"
       >
         CLIFFORD ADUAKO DONKOR
+        <span>
+          <FaGithub className="text-white" />
+        </span>
       </Link>
     </div>
   );
