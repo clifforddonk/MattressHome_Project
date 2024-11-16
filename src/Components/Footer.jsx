@@ -10,10 +10,12 @@ const Footer = () => {
         "
         className="text-blue-500"
       >
-        CLIFFORD ADUAKO DONKOR
-        <span>
-          <FaGithub className="text-white" />
-        </span>
+        <div className="flex justify-center gap-2">
+          CLIFFORD ADUAKO DONKOR
+          <span>
+            <FaGithub className="text-white mt-1" />
+          </span>
+        </div>
       </Link>
     </div>
   );
