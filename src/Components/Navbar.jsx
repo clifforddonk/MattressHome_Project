@@ -52,7 +52,7 @@ function Navbar() {
 
           {/* Phone Icon */}
           <div className=" pr-3 md:px-28 md:mr-6">
-            <FiPhoneCall className="text-white text-2xl" />
+            <FiPhoneCall className="text-white text-2xl cursor-pointer" />
           </div>
         </div>
       </div>
