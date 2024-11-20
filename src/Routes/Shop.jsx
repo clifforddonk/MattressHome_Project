@@ -120,7 +120,7 @@ const Shop = () => {
       <Navbar />
       <main className="mt-[170px] md:m-12 sm:m-0 md:mt-[150px]">
         <h1 className="text-center text-3xl font-bold">Choose a filter:</h1>
-        <div className="justify-center grid grid-cols-2 md:grid-cols-4 gap-10 mt-2">
+        <div className="justify-center grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-8 mt-2">
           {fetchCategory.map((category) => (
             <button
               onClick={() => handleCategoryClick(category.id)}
