@@ -21,7 +21,7 @@ const Services = () => {
               mattress or wish to restore your old one, we have the perfect
               solution for you
             </p>
-            <div className="flex gap-3 justify-evenly mt-4">
+            <div className="flex gap-4 justify-evenly mt-4">
               <FaLayerGroup className="text-yellow-300 text-4xl" />
               <h3 className="text-gray-700">
                 <b>New Mattresses </b>Choose from our wide range of high-quality

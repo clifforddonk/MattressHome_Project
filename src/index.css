@@ -11,3 +11,45 @@
 .sizebutton {
   @apply w-1/5 bg-yellow-400 rounded-full text-white p-1 font-bold;
 }
+
+.floating-label-container {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.floating-label-container input {
+  width: 100%;
+  padding: 16px 14px 6px; /* Adjust for floating label */
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px; /* Rounded corners */
+  outline: none;
+  transition: border-color 0.3s, padding 0.2s, height 0.2s;
+  height: 48px; /* Set input field height */
+}
+
+.floating-label-container input:focus {
+  border-color: blue; /* Yellow border when focused */
+}
+
+.floating-label {
+  position: absolute;
+  left: 12px; /* Inside padding */
+  top: 50%; /* Start at middle */
+
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #aaa;
+  background-color: white;
+  padding: 0 4px; /* Add padding to make it stand out */
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+}
+
+.floating-label.active {
+  top: -1px; /* Move above input field */
+  left: 10px; /* Align with input field border */
+  font-size: 16px; /* Smaller text */
+  color: black; /* Yellow color */
+}
