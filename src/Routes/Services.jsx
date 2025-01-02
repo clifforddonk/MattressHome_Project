@@ -29,7 +29,7 @@ const Services = () => {
                 Ashfoam, and other foreign brands.
               </h3>
             </div>
-            <div className="flex gap-3 justify-evenly  mt-4">
+            <div className="flex gap-4 justify-evenly  mt-4">
               <FaCloudUploadAlt className="text-yellow-300 text-3xl" />
               <h3 className="text-gray-700">
                 <b>Restoration Services</b> Give your old mattress a new life
