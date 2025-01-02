@@ -19,7 +19,7 @@ const DetailedImages = ({ product }) => {
     const fetchImages = async () => {
       try {
         const response = await axiosInstance.get(`/products/${product.id}`);
-        console.log(response);
+
         const pictures = response.data.product.pictures.map(
           (picture) => picture.image_path
         );
