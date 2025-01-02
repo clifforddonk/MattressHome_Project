@@ -37,7 +37,7 @@ const Services = () => {
                 durability.
               </h3>
             </div>
-            <div className="flex gap-3 justify-evenly  mt-4">
+            <div className="flex gap-4 justify-evenly  mt-4">
               <FaTools className="text-yellow-300 text-3xl" />
               <h3 className="text-gray-700">
                 <b>Customer Support</b> We are here to solve your sleep needs.
