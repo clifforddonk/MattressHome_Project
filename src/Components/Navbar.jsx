@@ -33,7 +33,7 @@ function Navbar() {
             />
 
             <h1 className="text-2xl font-bold text-white py-1 px-1">
-              The Sleep Sanctuary.
+              <Link>The Sleep Sanctuary.</Link>
             </h1>
           </div>
           {/* Search Input */}
