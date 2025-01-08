@@ -25,17 +25,19 @@ function Navbar() {
           </div>
 
           {/* Logo */}
-          <div className="px-2 flex jusfify-evenly">
-            <img
-              className="w-15 h-9 "
-              src="/icons/mattress-logo.png"
-              alt="Logo"
-            />
+          <Link to="/">
+            <div className="px-2 flex jusfify-evenly hover:scale-105 transition duration-200">
+              <img
+                className="w-15 h-9 "
+                src="/icons/mattress-logo.png"
+                alt="Logo"
+              />
 
-            <h1 className="text-2xl font-bold text-white py-1 px-1">
-              <Link to="/">The Sleep Sanctuary.</Link>
-            </h1>
-          </div>
+              <h1 className="text-2xl font-bold text-white py-1 px-1  ">
+                The Sleep Sanctuary.
+              </h1>
+            </div>
+          </Link>
           {/* Search Input */}
           <div
             className="relative w-80 order-1 sm:order-none mx-auto mb-5 sm:mb-0 pt-2"
