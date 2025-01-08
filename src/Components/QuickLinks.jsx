@@ -35,7 +35,7 @@ const QuickLinks = () => {
             <BsFacebook className="text-4xl cursor-pointer hover:scale-110 transition" />
             <FaTwitter className="text-4xl cursor-pointer hover:scale-110 transition" />
             <FaInstagram className="text-4xl cursor-pointer hover:scale-110 transition" />
-            <FaLinkedin className="text-4xl cursor-pointer" />
+            <FaLinkedin className="text-4xl cursor-pointer hover:scale-110 transition" />
           </div>
         </div>
         <div className="px-10 md:w-1/3 w-full">
