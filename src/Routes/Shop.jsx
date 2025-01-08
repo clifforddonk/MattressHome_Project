@@ -37,7 +37,7 @@ const ShopProduct = ({ product }) => {
   };
 
   return (
-    <div className="w-full h-90 bg-white shadow-md h-full rounded-lg overflow-hidden  relative hover:scale-105">
+    <div className="w-full h-90 bg-white shadow-md h-full rounded-lg overflow-hidden  relative hover:scale-105 transition ">
       <div className="h-48">
         <img src={imageUrl} className=" h-48 w-full" alt={product.name} />
       </div>
