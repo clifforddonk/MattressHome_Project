@@ -32,7 +32,7 @@ const QuickLinks = () => {
             className="flex justify-evenly mt-3 lg:pl-4  lg:pr-20 px-2
         "
           >
-            <BsFacebook className="text-4xl cursor-pointer" />
+            <BsFacebook className="text-4xl cursor-pointer hover:scale-105" />
             <FaTwitter className="text-4xl cursor-pointer" />
             <FaInstagram className="text-4xl cursor-pointer" />
             <FaLinkedin className="text-4xl cursor-pointer" />
