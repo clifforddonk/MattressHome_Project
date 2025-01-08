@@ -53,7 +53,7 @@ function Navbar() {
           </div>
 
           {/* Phone Icon */}
-          <div className=" pr-3 md:px-28 md:mr-6 hover:scale-105">
+          <div className=" pr-3 md:px-28 md:mr-6 hover:scale-125">
             <FiPhoneCall className="text-white text-2xl cursor-pointer" />
           </div>
         </div>
