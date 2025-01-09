@@ -17,8 +17,10 @@ const Contact = () => {
             <h1 className="left-4 top-4 absolute text-white font-bold text-3xl">
               Contact Us
             </h1>
-            <div className="bg-white">
-              <div></div>
+            <div className="absolute bottom-4 border ">
+              <div>
+                <p>Kwame</p>
+              </div>
               <div></div>
               <div></div>
             </div>
