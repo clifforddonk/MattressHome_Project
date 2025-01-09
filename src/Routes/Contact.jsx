@@ -31,7 +31,10 @@ const Contact = () => {
                 <p className="p-2">clifforddonk@gmail.com</p>
               </div>
               <div className="flex items-center justify-center gap-2">
-                <MapPin size={20} className="text-blue-950" />
+                <MapPin
+                  size={20}
+                  className="text-blue-950 hover:scale-110 transition"
+                />
                 <p className="p-2">Accra,Ghana</p>
               </div>
             </div>
