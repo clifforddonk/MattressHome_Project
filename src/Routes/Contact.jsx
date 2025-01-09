@@ -21,8 +21,12 @@ const Contact = () => {
               <div>
                 <p className="">+233 535563779</p>
               </div>
-              <div></div>
-              <div></div>
+              <div>
+                <p>clifforddonk@gmail.com</p>
+              </div>
+              <div>
+                <p>Accra,Ghana</p>
+              </div>
             </div>
           </div>
           <div className="mx-0 w-full shadow rounded-xl bg-white ">
