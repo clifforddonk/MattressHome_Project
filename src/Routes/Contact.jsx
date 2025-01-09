@@ -24,7 +24,10 @@ const Contact = () => {
                 <p className="p-2">+233 535563779</p>
               </div>
               <div className="flex items-center justify-center gap-2">
-                <Mail size={20} className="text-blue-950" />
+                <Mail
+                  size={20}
+                  className="text-blue-950 hover:scale-110 transition"
+                />
                 <p className="p-2">clifforddonk@gmail.com</p>
               </div>
               <div className="flex items-center justify-center gap-2">
