@@ -20,7 +20,10 @@ const Contact = () => {
             </h1>
             <div className="absolute bottom-4 border rounded-xl h-40 w-80 left-4 bg-white text-xl p-4">
               <div className="flex items-center justify-center gap-2">
-                <Phone size={20} className="text-blue-950" />
+                <Phone
+                  size={20}
+                  className="text-blue-950 hover:scale-110 transition"
+                />
                 <p className="p-2">+233 535563779</p>
               </div>
               <div className="flex items-center justify-center gap-2">
