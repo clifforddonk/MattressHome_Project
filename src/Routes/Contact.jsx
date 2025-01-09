@@ -17,12 +17,12 @@ const Contact = () => {
             <h1 className="left-4 top-4 absolute text-white font-bold text-3xl">
               Contact Us
             </h1>
-            <div className="absolute bottom-4 border rounded-xl h-40 w-72 left-4 bg-white">
+            <div className="absolute bottom-4 border rounded-xl h-40 w-72 left-4 bg-white text-center text-xl">
               <div>
-                <p className="">+233 535563779</p>
+                <p className="p-2">+233 535563779</p>
               </div>
               <div>
-                <p>clifforddonk@gmail.com</p>
+                <p className="p-2">clifforddonk@gmail.com</p>
               </div>
               <div>
                 <p>Accra,Ghana</p>
