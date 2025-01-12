@@ -24,7 +24,7 @@ const Contact = () => {
                   size={20}
                   className="text-blue-950 hover:scale-125 transition"
                 />
-                <p className="p-2">+233 535563779</p>
+                <p className="p-2">0508597327</p>
               </div>
               <div className="flex items-center justify-center gap-2">
                 <Mail
