@@ -12,7 +12,7 @@ function Navbar() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-[#f40000] z-50 ">
+    <header className="fixed top-0 left-0 w-full bg-blue-100 z-50 ">
       <div className="container mx-auto w-full">
         <div className="flex flex-wrap items-center justify-between w-full pt-4">
           {/* Toggle Icon for Mobile */}
