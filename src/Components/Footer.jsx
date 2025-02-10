@@ -8,7 +8,7 @@ const Footer = () => {
       <Link
         to="https//:linkedin.com/in/clifford-donkor-1a2b3c
         "
-        className="text-red-500"
+        className="text-blue-500"
       >
         <div className="flex justify-center gap-2">
           CLIFFORD ADUAKO DONKOR
