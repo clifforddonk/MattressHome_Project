@@ -33,7 +33,7 @@ function Navbar() {
                 alt="Logo"
               />
 
-              <h1 className="text-3xl font-bold text-white py-1 px-1  ">
+              <h1 className="text-2xl font-bold text-white py-1 px-1  ">
                 The Sleep Sanctuary.
               </h1>
             </div>
