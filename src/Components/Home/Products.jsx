@@ -1,11 +1,8 @@
-/* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
 import axiosInstance from "../../axios/axiosInstance";
 
-// eslint-disable-next-line react/prop-types
 const Product = ({ product }) => {
   const imageUrl = `${import.meta.env.VITE_APP_API_URL}/${
-    // eslint-disable-next-line react/prop-types
     product.pictures[0].image_path
   }`;
 
